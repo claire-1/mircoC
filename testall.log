@@ -1,0 +1,49 @@
+/usr/bin/lli
+
+###### Testing test-add1
+./microc.native tests/test-add1.mc > test-add1.ll
+llc -relocation-model=pic test-add1.ll > test-add1.s
+llc: test-add1.ll:2:1: error: expected top-level entity
+source_filename = "MicroC"
+^
+###### FAILED
+
+###### Testing test-arith1
+./microc.native tests/test-arith1.mc > test-arith1.ll
+llc -relocation-model=pic test-arith1.ll > test-arith1.s
+llc: test-arith1.ll:2:1: error: expected top-level entity
+source_filename = "MicroC"
+^
+###### FAILED
+
+###### Testing test-arith2
+./microc.native tests/test-arith2.mc > test-arith2.ll
+llc -relocation-model=pic test-arith2.ll > test-arith2.s
+llc: test-arith2.ll:2:1: error: expected top-level entity
+source_filename = "MicroC"
+^
+###### FAILED
+
+###### Testing test-arith3
+./microc.native tests/test-arith3.mc > test-arith3.ll
+llc -relocation-model=pic test-arith3.ll > test-arith3.s
+llc: test-arith3.ll:2:1: error: expected top-level entity
+source_filename = "MicroC"
+^
+###### FAILED
+
+###### Testing test-fib
+./microc.native tests/test-fib.mc > test-fib.ll
+llc -relocation-model=pic test-fib.ll > test-fib.s
+llc: test-fib.ll:2:1: error: expected top-level entity
+source_filename = "MicroC"
+^
+###### FAILED
+
+###### Testing test-for1
+./microc.native tests/test-for1.mc > test-for1.ll
+llc -relocation-model=pic test-for1.ll > test-for1.s
+llc: test-for1.ll:2:1: error: expected top-level entity
+source_filename = "MicroC"
+^
+###### FAILED
